@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+<h1>Home</h1>
+<% posts.forEach(function(post){%>
+<li class="content">
+    <div class="wrapper">
+    <h1><%= post.title %> </h1>
+    <% if(post.text.length > 50){ %>
+    <%   var text = post.text.substr(0,49)+"..."; var tit = post.title }%>
+    <p><%= text %> <a href="posts/<%= post.title %>">Olvass tovább</a></p>
+</div>
+</li>
+<%})%>
+<%- include("partials/footer") -%>

@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+<div class="compDiv">
+    <h1>Írj valamit!</h1>
+    <form class="item" action="/" method="POST">
+        <label  for="inputTitle">Cím</label>
+        <input class="compInput" type="text" name="inputTitle" required autofocus>
+        <br>
+        <label for="compInput">Poszt</label>
+        <textarea  class = "compInput" maxlength="1000" name="inputText" placeholder="Max 1000 karakter" cols="30" rows="10" required></textarea>
+        <br><button type="submit" name="list" >POST</button>
+    </form>
+</div>
+<%- include("partials/footer") -%>
